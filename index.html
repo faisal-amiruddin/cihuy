@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Controller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Discord Bot Controller</h1>
+        <div class="input-group">
+            <label for="license-key">License Key</label>
+            <input type="text" id="license-key">
+        </div>
+        <div class="input-group">
+            <label for="bot-token">Bot Token</label>
+            <input type="text" id="bot-token">
+        </div>
+        <div class="input-group">
+            <label for="bot-prefix">Bot Prefix</label>
+            <input type="text" id="bot-prefix">
+        </div>
+        <div class="input-group">
+            <label for="owner-ids">Owner IDs (comma separated)</label>
+            <input type="text" id="owner-ids">
+        </div>
+        <div class="input-group">
+            <label for="history-id">History Channel ID</label>
+            <input type="text" id="history-id">
+        </div>
+        <div class="input-group">
+            <label for="donation-id">Donation Channel ID</label>
+            <input type="text" id="donation-id">
+        </div>
+        <div class="input-group">
+            <label for="stock-id">Stock Channel ID</label>
+            <input type="text" id="stock-id">
+        </div>
+        <div class="input-group">
+            <label for="banner-url">Store Banner URL</label>
+            <input type="text" id="banner-url">
+        </div>
+        <div class="input-group">
+            <label for="mongodb-url">MongoDB URI</label>
+            <input type="text" id="mongodb-url">
+        </div>
+        <button id="start-btn">Start Bot</button>
+        <button id="stop-btn">Stop Bot</button>
+        <div class="console">
+            <h2>Console Output</h2>
+            <div id="console-output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
