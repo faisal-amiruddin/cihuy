@@ -22,15 +22,16 @@ jobs:
         with:
           working-directory: ./backend
 
-      - name: Build project
-        run: npm run build
-        working-directory: ./backend 
+      - name: Prepare frontend files
+        run: |
+          mkdir -p dist
+          cp -r frontend/* dist/
 
-      - name: Upload production-ready build files
+      - name: Upload production-ready files
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./backend/dist 
+          path: ./dist
 
   deploy:
     name: Deploy

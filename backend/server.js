@@ -19,6 +19,13 @@ require('dotenv').config();
 const LICENSE_DB_URI = process.env.LICENSE_DB_URI;
 const BOT_TOKEN = process.env.BOT_TOKEN;
 
+
+const corsOptions = {
+    origin: 'https://faisal-amiruddin.github.io/',
+    optionsSuccessStatus: 200
+  }
+  app.use(cors(corsOptions));
+
 // Discord Bot
 let botClient = null;
 let maintenanceMode = false;
