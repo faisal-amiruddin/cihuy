@@ -19,8 +19,6 @@ jobs:
 
       - name: Install backend dependencies
         run: cd backend && npm install --no-audit --no-fund
-        with:
-          working-directory: ./backend
 
       - name: Prepare frontend files
         run: |
